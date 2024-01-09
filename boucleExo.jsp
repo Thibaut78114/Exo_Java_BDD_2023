@@ -27,7 +27,6 @@
 
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>Ecrire le code afin de produire un carré d'étoile</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
 <% for (int i = 0; i < cpt; i++) { %>
     <%
@@ -85,16 +84,26 @@
 
 
 <h2>Exercice 6 : Le demi losange</h2>
-<p>Ecrire le code afin de produire un demi-losange</p>
+<p>Ecrire le code afin de produire un losange</p>
 <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j = 1; j <= cpt - i; j++) { %>
         <%= "&nbsp;&nbsp;" %>
     <% } %>
-    <% for (int k = 1; k <= i; k++) { %>
+    <% for (int k = 1; k <= i * 2 - 1; k++) { %>
         <%= "*" %>
     <% } %>
     <br>
 <% } %>
+<% for (int i = cpt - 1; i >= 1; i--) { %>
+    <% for (int j = 1; j <= cpt - i; j++) { %>
+        <%= "&nbsp;&nbsp;" %>
+    <% } %>
+    <% for (int k = 1; k <= i * 2 - 1; k++) { %>
+        <%= "*" %>
+    <% } %>
+    <br>
+<% } %>
+
 
 
 <h2>Exercice 7 : La table de multiplication</h2>
