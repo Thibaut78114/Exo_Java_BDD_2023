@@ -35,8 +35,7 @@
 %>
 
 <h2>Exercice 1 : Comparaison 1</h2>
-<p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
-A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
+<p>saisir les valeur A,B,C pour que la comparaison entre A,B,C soit effectuer</br>
 
 <%= resultatExo1 %>
 
