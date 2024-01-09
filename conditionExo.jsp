@@ -41,6 +41,7 @@
     String valeurA = request.getParameter("valeurA");
     String valeurB = request.getParameter("valeurB");
     String valeurC = request.getParameter("valeurC");
+    String resultatExo1 = "";
 
     if (valeurA != null && valeurB != null && valeurC != null) {
         int intValeurA = Integer.parseInt(valeurA);
@@ -49,13 +50,9 @@
 
         // Comparaison de C entre A et B
         if (intValeurC > intValeurA && intValeurC < intValeurB) {
-%>
-            <p>Oui, C est compris entre A et B.</p>
-<%
+            resultatExo1 = "Oui, C est compris entre A et B.";
         } else {
-%>
-            <p>Non, C n'est pas compris entre A et B.</p>
-<%
+            resultatExo1 = "Non, C n'est pas compris entre A et B.";
         }
     }
 %>
@@ -68,6 +65,8 @@ A = 10</br>
 B = 20</br>
 C = 15</br>
 Oui C est compris entre A et B</p>
+
+<%= resultatExo1 %>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
