@@ -71,16 +71,17 @@
 
 
 <h2>Exercice 5 : Triangle isocele</h2>
-<p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
+<p>Ecrire le code afin de produire un triangle isocèle</p>
 <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = cpt - i; j > 0; j--) { %>
+    <% for (int j = 1; j <= cpt - i; j++) { %>
         <%= "&nbsp;&nbsp;" %>
     <% } %>
-    <% for (int k = 1; k <= i; k++) { %>
+    <% for (int k = 1; k <= 2 * i - 1; k++) { %>
         <%= "*" %>
     <% } %>
     <br>
 <% } %>
+
 
 
 <h2>Exercice 6 : Le demi losange</h2>
