@@ -85,25 +85,17 @@
 
 
 <h2>Exercice 6 : Le demi losange</h2>
-<p>Ecrire le code afin de produire un losange</p>
+<p>Ecrire le code afin de produire un demi-losange</p>
 <% for (int i = 1; i <= cpt; i++) { %>
     <% for (int j = 1; j <= cpt - i; j++) { %>
-        <%= "&nbsp;" %>
+        <%= "&nbsp;&nbsp;" %>
     <% } %>
-    <% for (int j = 1; j <= i; j++) { %>
+    <% for (int k = 1; k <= i; k++) { %>
         <%= "*" %>
     <% } %>
     <br>
 <% } %>
-<% for (int i = cpt - 1; i >= 1; i--) { %>
-    <% for (int j = 1; j <= cpt - i; j++) { %>
-        <%= "&nbsp;" %>
-    <% } %>
-    <% for (int j = 1; j <= i; j++) { %>
-        <%= "*" %>
-    <% } %>
-    <br>
-<% } %>
+
 
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
