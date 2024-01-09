@@ -107,7 +107,7 @@
 
 
 <h2>Exercice 7 : La table de multiplication</h2>
-<p>Ecrire le code afin de créser une table de multiplication</p>
+<p>Ecrire le code afin de créer une table de multiplication</p>
 <% int num = Integer.parseInt(valeur); %>
 <% for (int i = 1; i <= 10; i++) { %>
     <p><%= num %> x <%= i %> = <%= num * i %></p>
