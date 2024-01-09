@@ -40,7 +40,6 @@
 <%= resultatExo1 %>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
-<p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 <%
     if (valeur1 != null) {
         int number = Integer.parseInt(valeur1);
