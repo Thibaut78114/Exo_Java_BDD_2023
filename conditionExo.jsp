@@ -8,6 +8,9 @@
 <form action="#" method="post">
     <p>Saisir la valeur 1 : <input type="text" id="inputValeur1" name="valeur1"></p>
     <p>Saisir la valeur 2 : <input type="text" id="inputValeur2" name="valeur2"></p>
+<p>Saisir la valeur A : <input type="text" id="inputValeurA" name="valeurA"></p>
+        <p>Saisir la valeur B : <input type="text" id="inputValeurB" name="valeurB"></p>
+        <p>Saisir la valeur C : <input type="text" id="inputValeurC" name="valeurC"></p>
     <p><input type="submit" value="Afficher"></p>
 </form>
 <%-- Récupération des valeurs --%>
@@ -28,17 +31,7 @@
             <p>Valeur 1 est égale à Valeur 2.</p>
         <% } %>
 <%
-    }
-%>
-<form action="#" method="post">
-        <p>Saisir la valeur A : <input type="text" id="inputValeurA" name="valeurA"></p>
-        <p>Saisir la valeur B : <input type="text" id="inputValeurB" name="valeurB"></p>
-        <p>Saisir la valeur C : <input type="text" id="inputValeurC" name="valeurC"></p>
-        <p><input type="submit" value="Afficher"></p>
-    </form>
-    <%-- Récupération des valeurs --%>
-    <%
-        String valeurA = request.getParameter("valeurA");
+String valeurA = request.getParameter("valeurA");
         String valeurB = request.getParameter("valeurB");
         String valeurC = request.getParameter("valeurC");
 
@@ -58,6 +51,8 @@
             }
         }
     %>
+    }
+%>
 
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
