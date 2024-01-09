@@ -7,7 +7,6 @@
 <h1>Exercices sur les conditions</h1>
 <form action="#" method="post">
     <p>Saisir la valeur 1 : <input type="text" id="inputValeur1" name="valeur1"></p>
-    <p>Saisir la valeur 2 : <input type="text" id="inputValeur2" name="valeur2"></p>
     <p>Saisir la valeur A : <input type="text" id="inputValeurA" name="valeurA"></p>
     <p>Saisir la valeur B : <input type="text" id="inputValeurB" name="valeurB"></p>
     <p>Saisir la valeur C : <input type="text" id="inputValeurC" name="valeurC"></p>
@@ -16,28 +15,6 @@
 <%-- Récupération des valeurs --%>
 <%
     String valeur1 = request.getParameter("valeur1");
-    String valeur2 = request.getParameter("valeur2");
-
-    if (valeur1 != null && valeur2 != null) {
-        int intValeur1 = Integer.parseInt(valeur1);
-        int intValeur2 = Integer.parseInt(valeur2);
-
-        // Comparaison des valeurs
-        if (intValeur1 > intValeur2) { 
-%>
-            <p>Valeur 1 est supérieure à Valeur 2.</p>
-<%
-        } else if (intValeur1 < intValeur2) { 
-%>
-            <p>Valeur 1 est inférieure à Valeur 2.</p>
-<%
-        } else { 
-%>
-            <p>Valeur 1 est égale à Valeur 2.</p>
-<%
-        }
-    }
-
     String valeurA = request.getParameter("valeurA");
     String valeurB = request.getParameter("valeurB");
     String valeurC = request.getParameter("valeurC");
