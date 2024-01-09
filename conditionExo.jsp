@@ -6,18 +6,19 @@
 <body bgcolor=white>
 <h1>Exercices sur les conditions</h1>
 <form action="#" method="post">
-    <p>Saisir la valeur 1 : <input type="text" id="inputValeur1" name="valeur1"></p>
+   
     <p>Saisir la valeur A : <input type="text" id="inputValeurA" name="valeurA"></p>
     <p>Saisir la valeur B : <input type="text" id="inputValeurB" name="valeurB"></p>
-    <p>Saisir la valeur C : <input type="text" id="inputValeurC" name="valeurC"></p>
+    <p>Saisir la valeur C : <input type="text" id="inputValeurC" name="valeurC"></p> 
+    <p>Saisir la valeur 1 : <input type="text" id="inputValeur1" name="valeur1"></p>
     <p><input type="submit" value="Afficher"></p>
 </form>
 <%-- Récupération des valeurs --%>
 <%
-    String valeur1 = request.getParameter("valeur1");
     String valeurA = request.getParameter("valeurA");
     String valeurB = request.getParameter("valeurB");
     String valeurC = request.getParameter("valeurC");
+    String valeur1 = request.getParameter("valeur1");
     String resultatExo1 = "";
 
     if (valeurA != null && valeurB != null && valeurC != null) {
