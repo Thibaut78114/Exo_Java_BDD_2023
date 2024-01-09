@@ -35,8 +35,7 @@
     }
 %>
 
-<h2>Exercice 1 : Comparaison 1</h2>
-<p>saisir les valeur A,B,C pour que la comparaison entre A,B,C soit effectuer</br>
+<h2>Exercice 1 : Comparaison entre A,B,C</h2>
 
 <%= resultatExo1 %>
 
